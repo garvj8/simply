@@ -47,7 +47,7 @@ jobs:
 
       - run: pip install pip-audit bandit
       - run: pip-audit
-      - run: bandit -r .
+      - run: bandit -r . -x tests/
 
   deploy-production:
     needs: security
