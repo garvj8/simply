@@ -1,8 +1,13 @@
-def add(a, b):
+def add(a: int, b: int) -> int:
+
     return a + b
-def main():
+
+
+
+def main() -> None:
     result = add(2, 3)
     print(f"2 + 3 = {result}")
+
 
 if __name__ == "__main__":
     main()
